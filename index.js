@@ -183,7 +183,7 @@ class huya_danmu extends events {
                     let wup = new Taf.Wup()
                     wup.decode(command.vData.buffer)
                     let map = new (TafMx.WupMapping[wup.sFuncName])()
-                    wup.readStruct('tRsp', map, TafMx.WupMapping[wup.sFuncName])
+                    // wup.readStruct('tRsp', map, TafMx.WupMapping[wup.sFuncName])
                     this._emitter.emit(wup.sFuncName, map)
                     break
                 case HUYA.EWebSocketCommandType.EWSCmdS2C_MsgPushReq:

@@ -1,5 +1,5 @@
 const huya_danmu = require('./index')
-const roomid = 'edc595'
+const roomid = '660000'
 const client = new huya_danmu(roomid)
 
 client.on('connect', () => {
